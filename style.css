@@ -1,0 +1,182 @@
+html {
+    background: #f2f2f2;
+}
+
+body {
+    display: flex;
+}
+
+.first-screen {
+    margin: 0 auto;
+    width: 1600px;
+}
+/* с чего вообще подступиться? грид или флекс? я же еще не задала контейнер? лого входит в контейнер же? */
+/*.logo {*/
+/*  position: absolute;  */
+/*  width: 117px;*/
+/*  height: 22px;*/
+/*  left: 150px;*/
+/*  top: 80px;*/
+/*}*/
+
+.logo {
+    margin-right: 120px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+}
+/* #office {
+    display: flex; 
+    order: 1;
+    flex-grow: 0;
+    margin-left: 25px;
+}
+
+#about {
+    display: flex; 
+    order: 2;
+    flex-grow: 0;
+    margin-left: 10%;
+}
+
+
+.navigation {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #383838;
+} */
+
+.circle {
+width: 56px;
+height: 56px;
+left: 637px;
+top: 595px;
+background: #E9B0B0;
+border-radius: 50%;
+}
+
+/* Ее вообще не видно.  */
+/*.arrow {*/
+/*    border: solid black;*/
+/*    border-width: 0 3px 3px 0;*/
+/*    display: inline-block;*/
+/*    padding: 3px;*/
+/*}*/
+
+
+/* что делают, если шрифт из фигмы не подходит? ищут похожий? */
+.our-links.arrow {
+position: absolute;
+width: 115px;
+height: 24px;
+left: 147px;
+top: 415px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.01em;
+color: rgba(56, 56, 56, 0.5);
+transform: rotate(-90deg);}
+
+.skyscraper { 
+position: absolute;
+width: 744px;
+height: 993px;
+left: 980px;
+top: 0px;
+background: url(imgCover.jpg);
+}
+
+.news {
+    position: absolute;
+    width: 72px;
+    height: 24px;
+    left: 387px;
+    top: 795px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #383838; 
+}
+
+/* почему не видит класс?  */
+.825added {
+position: absolute;
+width: 229px;
+height: 72px;
+left: 526px;
+top: 795px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.01em;
+color: #383838;
+}
+
+    .go-to .arrow-with-circle {
+        position: relative;
+        width: 100px;
+    }
+
+    .go-to .arrow-with-circle:before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #E9B0B0;
+
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+
+    .go-to .arrow {
+        display: block;
+        margin: 30px auto;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        transform: rotate(135deg) translate(-10px, 21px);
+
+        z-index: 999;
+    }
+
+    .go-to .arrow:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 85px;
+        background-color: black;
+        transform: rotate(-45deg) translate(30px, 12px);
+        left: 0;
+        top: 0;
+
+        z-index: 999;
+    }
+
+    .social-block {
+        display: flex;
+        flex-direction: column;
+        width: 24px;
+    }
