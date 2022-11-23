@@ -1,35 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
+
 html {
     background: #f2f2f2;
 }
-
-body {
+/* 
+/* body {
     display: flex;
-}
+    } */ */
 
 .first-screen {
     margin: 0 auto;
     width: 1600px;
 }
-/* с чего вообще подступиться? грид или флекс? я же еще не задала контейнер? лого входит в контейнер же? */
-/*.logo {*/
-/*  position: absolute;  */
-/*  width: 117px;*/
-/*  height: 22px;*/
-/*  left: 150px;*/
-/*  top: 80px;*/
-/*}*/
-
+/* � ���� ������ ������������? ���� ��� �����? � �� ��� �� ������ ���������? ���� ������ � ��������� ��? */
 .logo {
-    margin-right: 120px;
+ position: absolute; 
+ width: 117px;
+ height: 22px;
+ left: 150px;
+ top: 80px;
 }
+
+/* .logo {
+    position: relative;
+    margin-right: 150px;
+    width: 117px;
+    height: 22px;
+    left: 150px;
+    top: 80px;
+} */
 
 .navigation {
     display: flex;
     justify-content: space-between;
 }
 
+.nav-link{
+    display: flex;
+    justify-content: space-evenly;
+    width: 97px;
+    height: 24px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+
+    letter-spacing: 0.01em;
+
+    color: #383838;
+    white-space: nowrap;
+
+
+}
+
 .header {
     display: flex;
+    justify-content: space-evenly;
+    margin-right: 701px;
+    margin-left: 385px;
+    padding: 60px;
+}
+
+.our-links {
+    position: absolute;
+    width: 115px;
+    height: 24px;
+    left: 147px;
+    top: 415px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.01em;
+
+    color: rgba(56, 56, 56, 0.5);
+
+    transform: rotate(-90deg);
+}
+
+.icon-container {
+    display: block;
+    padding: 31px;
+}
+
+.nav-link {
+    width: 128px;
+    height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 60px;
+    letter-spacing: 0.01em;
+    color: #383838;
+
+
 }
 /* #office {
     display: flex; 
@@ -37,15 +110,12 @@ body {
     flex-grow: 0;
     margin-left: 25px;
 }
-
 #about {
     display: flex; 
     order: 2;
     flex-grow: 0;
     margin-left: 10%;
 }
-
-
 .navigation {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
@@ -55,16 +125,69 @@ body {
     color: #383838;
 } */
 
-.circle {
-width: 56px;
-height: 56px;
-left: 637px;
-top: 595px;
-background: #E9B0B0;
-border-radius: 50%;
+.amongbrokers {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 387px;
+    top: 295px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    color: #383838;
+
+    opacity: 0.5;
 }
 
-/* Ее вообще не видно.  */
+.long-vert-line {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 0px;
+    background: #C3C3C3;
+    /* лево и право тут тоже сделано на глаз */
+    left: 81px;
+    top: 646px;
+    position: absolute;
+
+    border: 1px solid rgba(195, 195, 195, 0.5);
+    transform: rotate(90deg);
+}
+
+.rent-NY {
+    position: absolute;
+    width: 631px;
+    height: 200px;
+    left: 387px;
+    top: 355px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 100px;
+    
+    color: #383838;
+
+}
+
+.circle {
+    width: 56px;
+    height: 56px;
+    left: 637px;
+    top: 595px;
+    background: #E9B0B0;
+    border-radius: 50%;
+}
+
+/* �� ������ �� �����.  */
 /*.arrow {*/
 /*    border: solid black;*/
 /*    border-width: 0 3px 3px 0;*/
@@ -73,30 +196,69 @@ border-radius: 50%;
 /*}*/
 
 
-/* что делают, если шрифт из фигмы не подходит? ищут похожий? */
+/* ��� ������, ���� ����� �� ����� �� ��������? ���� �������? */
 .our-links.arrow {
-position: absolute;
-width: 115px;
-height: 24px;
-left: 147px;
-top: 415px;
+    position: absolute;
+    width: 115px;
+    height: 24px;
+    left: 147px;
+    top: 415px;
 
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.01em;
-color: rgba(56, 56, 56, 0.5);
-transform: rotate(-90deg);}
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: rgba(56, 56, 56, 0.5);
+    transform: rotate(-90deg);
+}
 
 .skyscraper { 
-position: absolute;
-width: 744px;
-height: 993px;
-left: 980px;
-top: 0px;
-background: url(imgCover.jpg);
+    position: absolute;
+    width: 744px;
+    height: 993px;
+    left: 980px;
+    top: 0px;
+    background: url(imgCover.jpg);
+    margin-top: 40px;
+}
+
+.forbes-interview {
+    position: absolute;
+    width: 240px;
+    height: 24px;
+    left: 1752px;
+    top: 335px;
+    margin-left: 40px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    /* следующее свойство почему-то не работает */
+    text-decoration: none;
+
+    color: rgba(56, 56, 56, 0.5);
+
+    transform: rotate(-90deg);
+}
+
+.short-vert-line {
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    left: 1764px;
+    top: 375px;
+
+    background: #C3C3C3;
+    border: 1px solid rgba(195, 195, 195, 0.5);
+    transform: rotate(90deg); 
+    /* найди ее емае  */
 }
 
 .news {
@@ -115,26 +277,51 @@ background: url(imgCover.jpg);
     color: #383838; 
 }
 
-/* почему не видит класс?  */
-.825added {
-position: absolute;
-width: 229px;
-height: 72px;
-left: 526px;
-top: 795px;
+/* ������ �� ����� �����?  */
+.added {
+    position: absolute;
+    width: 229px;
+    height: 72px;
+    left: 526px;
+    top: 795px;
 
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.01em;
-color: #383838;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #383838;
 }
+.go-to {
+    position: absolute;
+    width: 165px;
+    height: 24px;
+    left: 385px;
+    top: 611px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    letter-spacing: 0.01em;
+
+    color: #000000;
+    white-space: nowrap;
+}
+
 
     .go-to .arrow-with-circle {
         position: relative;
         width: 100px;
+        left: 580px;
+        left: 274px;
+        top: -23px;
+        /* как задать, между текстом и стрелкой ровно 30px? Я могу сдвинуть, но погрешность же есть
+        плюс, я сейчас выровняла текст и стрелку на глаз, а как это сделать по-человечески? 
+        а еще на моем мониторе с теми параметрами, которые там указаны, все слишком крупно и сдвинуто вправо. ну, непропрорционально*/
     }
 
     .go-to .arrow-with-circle:before {
@@ -147,7 +334,7 @@ color: #383838;
 
         position: absolute;
         bottom: 0;
-        right: 20px;
+        right: 24px;
     }
 
     .go-to .arrow {
@@ -179,4 +366,87 @@ color: #383838;
         display: flex;
         flex-direction: column;
         width: 24px;
+        position: relative;
+        /* column-gap: 33px;        */
+    }
+
+    .rectangle-first-page {
+        position: absolute;
+        width: 928px;
+        height: 110px;
+        left: 842px;
+        top: 993px;
+
+        background: #FFFFFF;
+    }
+
+    /* .rent-cond-rectangle {
+        position: absolute;
+width: 320px;
+height: 72px;
+left: 1257px;
+top: 1055px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+letter-spacing: 0.01em;
+
+color: #383838;
+    } */
+
+    .rent-conditions {
+        position: absolute;
+        width: 209px;
+        height: 60px;
+        left: 980px;
+        top: 1048px;
+        
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+            
+        color: #383838;  
+    }
+
+    .honest-cond {
+        position: absolute;
+        width: 209px;
+        height: 60px;
+        left: 980px;
+        top: 1048px;
+
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        white-space: nowrap;
+
+        color: #383838;
+
+        z-index: 3;
+    }
+
+    .rent-it {
+        position: absolute;
+        width: 320px;
+        height: 72px;
+        left: 1257px;
+        top: 1055px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        letter-spacing: 0.01em;
+
+        color: #383838;
     }
