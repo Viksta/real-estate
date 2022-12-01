@@ -4,72 +4,56 @@
 html {
     background: #f2f2f2;
 }
-/* 
-/* body {
-    display: flex;
-    } */ */
 
 .first-screen {
-    margin: 0 auto;
+    margin: auto;
     width: 1600px;
+    margin-top: 83px;
 }
-/* � ���� ������ ������������? ���� ��� �����? � �� ��� �� ������ ���������? ���� ������ � ��������� ��? */
 
 .logo {
-    position: absolute;
+    margin-right: 120px;
     margin-left: 150px;
-    width: 117px;
-    height: 22px;
-    left: 150px;
-    top: 80px;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-between;
-    /* на глаз */
-    margin-left: 351px;
-    padding-left: 415px;
+}
+
+.navigation a:first-child {
+    margin-left: 0;
 }
 
 .nav-link{
-    display: flex;
-    justify-content: space-evenly;
-    width: 97px;
-    height: 24px;
-
-    font-family: 'Open Sans';
+    color: #383838;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    text-decoration: none;
-
     letter-spacing: 0.01em;
-
-    color: #383838;
-    white-space: nowrap;
-
-
+    text-decoration: none;
+    margin-left: 60px;
 }
 
 .header {
     display: flex;
-    justify-content: space-evenly;
-    margin-right: 701px;
-    margin-left: 385px;
-    padding: 60px;
+    width: 70%;
+}
+
+.second-row {
+    display: flex;
+}
+
+.social-block {
+    display: flex;
+    flex-direction: column;
+    width: 22px;
+    margin-top: 300px;
+    margin-left: 150px;
 }
 
 .our-links {
-    position: absolute;
-    width: 115px;
-    height: 24px;
-    left: 147px;
-    top: 415px;
-    margin-bottom: 40px;
-
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -81,42 +65,38 @@ html {
     color: rgba(56, 56, 56, 0.5);
 
     transform: rotate(-90deg);
+    white-space: nowrap;
 }
 
 .icon-container {
-    display: block;
-    /* тоже все на глаз */
-    padding: 199px;
-    margin-top: 613px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 
-.youtube {
+.icon-container img {
+    vertical-align: middle;
+}
+
+.icon-container a {
+    width: 22px;
+    height: 22px;
     margin-bottom: 30px;
-    margin-top: 44px;
-    left: 4.55%;
-    right: 4.55%;
-    top: 18.18%;
-    bottom: 13.64%;
+    text-align: center;
 }
 
-.facebook {
-    margin-bottom: 31px;
-    /* даже при характеристиках из фигмы - неровно относительно ютуба */
-    left: 27.27%;
-    right: 30.95%;
-    top: 9.09%;
-    bottom: 13.64%;
+.icon-container a:last-child {
+    margin-bottom: 0;
 }
 
-.vk {
-    left: 4.55%;
-    right: 4.55%;
-    top: 22.73%;
-    bottom: 22.73%; 
+.long-vert-line {
+    width: 0;
+    height: 249px;
+    background: #C3C3C3;
+    border: 1px solid rgba(195, 195, 195, 0.5);
+    margin: 40px auto;
 }
 
-.nav-link {
+/* .nav-link {
     width: 128px;
     height: 24px;
     font-family: 'Open Sans', sans-serif;
@@ -129,7 +109,7 @@ html {
     color: #383838;
 
 
-}
+} */
 /* #office {
     display: flex; 
     order: 1;
@@ -151,13 +131,13 @@ html {
     color: #383838;
 } */
 
-.amongbrokers {
-    position: absolute;
-    width: 200px;
-    height: 20px;
-    left: 387px;
-    top: 295px;
+.title-first {
+    margin-left: 200px;
+    margin-top: 200px;
+    width: 630px;
+}
 
+.amongbrokers {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -172,33 +152,15 @@ html {
     opacity: 0.5;
 }
 
-.long-vert-line {
-    content: "";
-    display: block;
-    width: 249px;
-    height: 0px;
-    background: #C3C3C3;
-    /* лево и право тут тоже сделано на глаз */
-    left: 81px;
-    top: 646px;
-    position: absolute;
 
-    border: 1px solid rgba(195, 195, 195, 0.5);
-    transform: rotate(90deg);
-}
 
 .rent-NY {
-    position: absolute;
-    width: 631px;
-    height: 200px;
-    left: 387px;
-    top: 355px;
-
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 400;
     font-size: 85px;
     line-height: 100px;
+    width: 631px;
     
     color: #383838;
 
@@ -251,49 +213,58 @@ html {
 }
 
 .forbes-interview {
-    position: absolute;
-    width: 240px;
-    height: 24px;
-    left: 1752px;
-    top: 335px;
-    margin-left: 40px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
     letter-spacing: 0.01em;
-    text-transform: uppercase;
-    /* следующее свойство почему-то не работает */
+    text-transform: uppercase; 
+    align-items: center;
+    align-content: space-between;
+    margin: 95px auto auto 1752px;
+   
+}
+
+
+.forbes-interview a {
     text-decoration: none;
-
     color: rgba(56, 56, 56, 0.5);
+}
 
+.forbes-interview-link {
     transform: rotate(-90deg);
+    margin: 40px auto;
+    width: 240px;
+    height: 24px;
+    left: 1752px;
+    top: 335px;
+    row-gap: 40px;
 }
 
 .short-vert-line {
-    position: absolute;
-    width: 100px;
-    height: 0px;
+    width: 0;
+    height: 100px;
     left: 1764px;
     top: 375px;
 
     background: #C3C3C3;
     border: 1px solid rgba(195, 195, 195, 0.5);
-    transform: rotate(90deg); 
-    /* найди ее емае  */
 }
 
+.news-added {
+    display: flex; 
+    width: 368px; 
+    justify-content: space-between;
+}
+
+
 .news {
-    position: absolute;
-    width: 72px;
-    height: 24px;
-    left: 387px;
-    top: 795px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -305,12 +276,6 @@ html {
 
 /* ������ �� ����� �����?  */
 .added {
-    position: absolute;
-    width: 229px;
-    height: 72px;
-    left: 526px;
-    top: 795px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -318,14 +283,9 @@ html {
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #383838;
+    margin-left: 67px;
 }
 .go-to {
-    position: absolute;
-    width: 165px;
-    height: 24px;
-    left: 385px;
-    top: 611px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -388,68 +348,26 @@ html {
         z-index: 999;
     }
 
-    .social-block {
-        display: flex;
-        flex-direction: column;
-        width: 24px;
-        position: relative;
-        /* column-gap: 33px;        */
-        width: 24px;
-height: 566px;
-/* left: 147px; */
-top: 300px;
-    }
+.rent-cond-rectangle {
+    display: flex;
+}
 
     .rectangle-first-page {
-        position: absolute;
         width: 928px;
         height: 110px;
         left: 842px;
         top: 993px;
 
         background: #FFFFFF;
-    }
-
-    /* .rent-cond-rectangle {
-        position: absolute;
-width: 320px;
-height: 72px;
-left: 1257px;
-top: 1055px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-letter-spacing: 0.01em;
-
-color: #383838;
-    } */
-
-    .rent-conditions {
-        position: absolute;
-        width: 209px;
-        height: 60px;
-        left: 980px;
-        top: 1048px;
-        
-        font-family: 'Playfair Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 30px;
-            
-        color: #383838;  
+        margin-left: 842px;
     }
 
     .honest-cond {
-        position: absolute;
         width: 209px;
         height: 60px;
-        left: 980px;
-        top: 1048px;
+        /* left: 980px;
+        top: 1048px; */
+        margin-left: auto;
 
         font-family: 'Playfair Display';
         font-style: normal;
@@ -464,7 +382,6 @@ color: #383838;
     }
 
     .rent-it {
-        position: absolute;
         width: 320px;
         height: 72px;
         left: 1257px;
