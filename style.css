@@ -210,6 +210,7 @@ html {
     top: 0px;
     background: url(imgCover.jpg);
     margin-top: 40px;
+    z-index: -1;
 }
 
 .forbes-interview {
@@ -358,6 +359,9 @@ html {
 
 .rent-cond-rectangle {
     display: flex;
+    background-color: white;
+    padding: 49px;
+
 }
 
     .rectangle-first-page {
@@ -375,7 +379,7 @@ html {
         height: 60px;
         /* left: 980px;
         top: 1048px; */
-        margin-left: auto;
+       
 
         font-family: 'Playfair Display';
         font-style: normal;
@@ -387,6 +391,7 @@ html {
         color: #383838;
 
         z-index: 3;
+       margin: -5px 49px 0 138px;
     }
 
     .rent-it {
@@ -409,5 +414,6 @@ html {
 
     .bottom-first {
         display: flex;
-
+        justify-content: flex-end;
+        margin-right: 73px;
     }
