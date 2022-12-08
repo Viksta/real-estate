@@ -219,42 +219,50 @@ html {
     font-size: 15px;
     line-height: 24px;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
 
     letter-spacing: 0.01em;
     text-transform: uppercase; 
-    align-items: center;
-    align-content: space-between;
-    margin: 95px auto auto 1752px;
+   
    
 }
 
 
 .forbes-interview a {
-    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
     color: rgba(56, 56, 56, 0.5);
+    text-decoration: none;
 }
 
 .forbes-interview-link {
-    transform: rotate(-90deg);
-    margin: 40px auto;
+    transform: rotate(180deg);
+    /* margin: 40px auto;
     width: 240px;
     height: 24px;
     left: 1752px;
-    top: 335px;
-    row-gap: 40px;
+    top: 335px; */
+    writing-mode: vertical-lr;
+    margin-bottom: 40px;
 }
 
 .short-vert-line {
-    width: 0;
+    margin-top: 37px;
+    margin-left: 12px;
+    width: 0px;
     height: 100px;
-    left: 1764px;
-    top: 375px;
 
     background: #C3C3C3;
-    border: 1px solid rgba(195, 195, 195, 0.5);
+    border-left: 1px solid rgb(195, 195, 195);
+    opacity: 0.5;
 }
 
 .news-added {
@@ -397,4 +405,9 @@ html {
         letter-spacing: 0.01em;
 
         color: #383838;
+    }
+
+    .bottom-first {
+        display: flex;
+
     }
