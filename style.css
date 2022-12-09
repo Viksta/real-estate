@@ -5,7 +5,7 @@ html {
     background: #f2f2f2;
 }
 
-.first-screen {
+.main-screen {
     margin: auto;
     width: 1600px;
     margin-top: 83px;
@@ -41,7 +41,7 @@ html {
     width: 70%;
 }
 
-.second-row {
+.body {
     display: flex;
 }
 
@@ -96,42 +96,7 @@ html {
     margin: 40px auto;
 }
 
-/* .nav-link {
-    width: 128px;
-    height: 24px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 60px;
-    letter-spacing: 0.01em;
-    color: #383838;
-
-
-} */
-/* #office {
-    display: flex; 
-    order: 1;
-    flex-grow: 0;
-    margin-left: 25px;
-}
-#about {
-    display: flex; 
-    order: 2;
-    flex-grow: 0;
-    margin-left: 10%;
-}
-.navigation {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #383838;
-} */
-
-.title-first {
+.main-title {
     margin-left: 200px;
     margin-top: 200px;
     width: 630px;
@@ -175,16 +140,6 @@ html {
     border-radius: 50%;
 }
 
-/* �� ������ �� �����.  */
-/*.arrow {*/
-/*    border: solid black;*/
-/*    border-width: 0 3px 3px 0;*/
-/*    display: inline-block;*/
-/*    padding: 3px;*/
-/*}*/
-
-
-/* ��� ������, ���� ����� �� ����� �� ��������? ���� �������? */
 .our-links.arrow {
     position: absolute;
     width: 115px;
@@ -202,6 +157,7 @@ html {
     transform: rotate(-90deg);
 }
 
+/* из-за того, что панелька слишком высоко, кусок здания за  него "заправлен"*/
 .skyscraper { 
     position: absolute;
     width: 744px;
@@ -226,8 +182,8 @@ html {
 
     letter-spacing: 0.01em;
     text-transform: uppercase; 
-   
-   
+    margin-left: 800px;
+    /* это единственный вариант, который работает. адаптивность, конечно, ушла */
 }
 
 
@@ -244,7 +200,7 @@ html {
     text-decoration: none;
 }
 
-.forbes-interview-link {
+.forbes-interview-text {
     transform: rotate(180deg);
     /* margin: 40px auto;
     width: 240px;
@@ -266,7 +222,7 @@ html {
     opacity: 0.5;
 }
 
-.news-added {
+.news-content {
     display: flex; 
     width: 368px; 
     justify-content: space-between;
@@ -284,7 +240,7 @@ html {
 }
 
 /* ������ �� ����� �����?  */
-.added {
+.content {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -374,7 +330,7 @@ html {
         margin-left: 842px;
     }
 
-    .honest-cond {
+    .bottom-title {
         width: 209px;
         height: 60px;     
 
@@ -391,7 +347,7 @@ html {
        margin: -5px 49px 0 138px;
     }
 
-    .rent-it {
+    .bottom-content {
         width: 320px;
         height: 72px;
         left: 1257px;
@@ -409,8 +365,12 @@ html {
         color: #383838;
     }
 
-    .bottom-first {
+    .bottom {
         display: flex;
         justify-content: flex-end;
         margin-right: 73px;
     }
+
+    /* .icon-container a:hover {
+        background-color: gold;
+    } */
