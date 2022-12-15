@@ -1,374 +1,370 @@
-html {
-    background: #f2f2f2;
+section {
+  margin-bottom: 200px;
 }
 
 .main-screen {
-    margin: auto;
-    width: 1600px;
-    margin-top: 83px;
+  margin: auto;
+  width: 1600px;
+  background: #f2f2f2;
+}
+
+.container {
+  margin: auto;
+  width: 1600px;
 }
 
 .logo {
-    margin-right: 120px;
-    margin-left: 150px;
+  margin-right: 120px;
+  margin-left: 150px;
 }
 
 .navigation {
-    display: flex;
+  display: flex;
 }
 
 .navigation a:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-.nav-link{
-    color: #383838;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    margin-left: 60px;
+.nav-link {
+  color: #383838;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  margin-left: 60px;
 }
 
 .header {
-    display: flex;
-    width: 70%;
+  display: flex;
+  width: 70%;
+  margin-top: 83px;
 }
 
 .body {
-    display: flex;
+  display: flex;
+  margin: 0;
 }
 
 .social-block {
-    display: flex;
-    flex-direction: column;
-    width: 22px;
-    margin-top: 300px;
-    margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  margin-top: 300px;
+  margin-left: 150px;
 }
 
 .our-links {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-    letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
 
-    color: rgba(56, 56, 56, 0.5);
+  color: rgba(56, 56, 56, 0.5);
 
-    transform: rotate(-90deg);
-    white-space: nowrap;
+  transform: rotate(-90deg);
+  white-space: nowrap;
 }
 
 .icon-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .icon-container img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .icon-container a {
-    width: 22px;
-    height: 22px;
-    margin-bottom: 30px;
-    text-align: center;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .icon-container a:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .long-vert-line {
-    width: 0;
-    height: 249px;
-    background: #C3C3C3;
-    border: 1px solid rgba(195, 195, 195, 0.5);
-    margin: 40px auto;
+  width: 0;
+  height: 249px;
+  background: #c3c3c3;
+  border: 1px solid rgba(195, 195, 195, 0.5);
+  margin: 40px auto;
 }
 
 .main-title {
-    margin-left: 200px;
-    margin-top: 200px;
-    width: 630px;
+  margin-left: 200px;
+  margin-top: 200px;
+  width: 630px;
 }
 
 .amongbrokers {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    white-space: nowrap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
 
-    color: #383838;
+  color: #383838;
 
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-
-
 .rent-NY {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 85px;
-    line-height: 100px;
-    width: 631px;
-    
-    color: #383838;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 100px;
+  width: 631px;
 
+  color: #383838;
 }
 
 .circle {
-    width: 56px;
-    height: 56px;
-    left: 637px;
-    top: 595px;
-    background: #E9B0B0;
-    border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  left: 637px;
+  top: 595px;
+  background: #e9b0b0;
+  border-radius: 50%;
 }
 
 .our-links.arrow {
-    position: absolute;
-    width: 115px;
-    height: 24px;
-    left: 147px;
-    top: 415px;
+  position: absolute;
+  width: 115px;
+  height: 24px;
+  left: 147px;
+  top: 415px;
 
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: rgba(56, 56, 56, 0.5);
-    transform: rotate(-90deg);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: rgba(56, 56, 56, 0.5);
+  transform: rotate(-90deg);
 }
 
 /* из-за того, что панелька слишком высоко, кусок здания за  него "заправлен"*/
-.skyscraper { 
-    position: absolute;
-    width: 744px;
-    height: 993px;
-    left: 980px;
-    top: 0px;
-    background: url(imgCover.jpg);
-    margin-top: 40px;
-    z-index: -1;
+.skyscraper {
+  width: 744px;
+  height: 993px;
+  left: 980px;
+  top: 0px;
+  background: url(imgCover.jpg);
+  /* margin-top: 40px; */
+  /* z-index: -1; */
+  /* background: #f2f2f2; */
 }
 
 .forbes-interview {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; */
-
-    letter-spacing: 0.01em;
-    text-transform: uppercase; 
-    margin-left: 800px;
-    /* это единственный вариант, который работает. адаптивность, конечно, ушла */
-    padding-right: 144px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  /* margin-left: 800px; */
+  padding-right: 144px;
+  background: #f2f2f2;
 }
 
-
 .forbes-interview a {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    writing-mode: vertical-lr;
-    color: rgba(56, 56, 56, 0.5);
-    text-decoration: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  color: rgba(56, 56, 56, 0.5);
+  text-decoration: none;
 }
 
 .forbes-interview-text {
-    transform: rotate(180deg);
-    /* margin: 40px auto;
+  transform: rotate(180deg);
+  /* margin: 40px auto;
     width: 240px;
     height: 24px;
     left: 1752px;
     top: 335px; */
-    writing-mode: vertical-lr;
-    margin-bottom: 40px;
+  writing-mode: vertical-lr;
+  margin-bottom: 40px;
 }
 
 .short-vert-line {
-    margin-top: 37px;
-    margin-left: 12px;
-    width: 0px;
-    height: 100px;
+  margin-top: 37px;
+  margin-left: 12px;
+  width: 0px;
+  height: 100px;
 
-    background: #C3C3C3;
-    border-left: 1px solid rgb(195, 195, 195);
-    opacity: 0.5;
+  background: #c3c3c3;
+  border-left: 1px solid rgb(195, 195, 195);
+  opacity: 0.5;
 }
 
 .news-content {
-    display: flex; 
-    width: 368px; 
-    justify-content: space-between;
+  display: flex;
+  width: 368px;
+  justify-content: space-between;
 }
 
-
 .news {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #383838; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #383838;
 }
 
 /* ������ �� ����� �����?  */
 .content {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #383838;
-    margin-left: 67px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #383838;
+  margin-left: 67px;
 }
 .go-to {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 
-    letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
 
-    color: #000000;
-    white-space: nowrap;
+  color: #000000;
+  white-space: nowrap;
 }
 
-
-    .go-to .arrow-with-circle {
-        position: relative;
-        width: 100px;
-        left: 580px;
-        left: 274px;
-        top: -23px;
-        /* как задать, между текстом и стрелкой ровно 30px? Я могу сдвинуть, но погрешность же есть
+.go-to .arrow-with-circle {
+  position: relative;
+  width: 100px;
+  left: 580px;
+  left: 274px;
+  top: -23px;
+  /* как задать, между текстом и стрелкой ровно 30px? Я могу сдвинуть, но погрешность же есть
         плюс, я сейчас выровняла текст и стрелку на глаз, а как это сделать по-человечески? 
         а еще на моем мониторе с теми параметрами, которые там указаны, все слишком крупно и сдвинуто вправо. ну, непропрорционально*/
-    }
-
-    .go-to .arrow-with-circle:before {
-        content: "";
-        display: block;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background-color: #E9B0B0;
-
-        position: absolute;
-        bottom: 0;
-        right: 24px;
-    }
-
-    .go-to .arrow {
-        display: block;
-        margin: 30px auto;
-        width: 10px;
-        height: 10px;
-        border-top: 2px solid #000;
-        border-left: 2px solid #000;
-        transform: rotate(135deg) translate(-10px, 21px);
-
-        z-index: 999;
-    }
-
-    .go-to .arrow:after {
-        content: "";
-        display: block;
-        width: 2px;
-        height: 85px;
-        background-color: black;
-        transform: rotate(-45deg) translate(30px, 12px);
-        left: 0;
-        top: 0;
-
-        z-index: 999;
-    }
-
-.rent-cond-rectangle {
-    display: flex;
-    background-color: white;
-    padding: 49px;
-
 }
 
-    .rectangle-first-page {
-        width: 928px;
-        height: 110px;
-        left: 842px;
-        top: 993px;
+.go-to .arrow-with-circle:before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #e9b0b0;
 
-        background: #FFFFFF;
-        margin-left: 842px;
-    }
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+}
 
-    .bottom-title {
-        width: 209px;
-        height: 60px;     
+.go-to .arrow {
+  display: block;
+  margin: 30px auto;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: rotate(135deg) translate(-10px, 21px);
 
-        font-family: 'Playfair Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 30px;
-        white-space: nowrap;
+  z-index: 999;
+}
 
-        color: #383838;
+.go-to .arrow:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 85px;
+  background-color: black;
+  transform: rotate(-45deg) translate(30px, 12px);
+  left: 0;
+  top: 0;
 
-        z-index: 3;
-       margin: -5px 49px 0 138px;
-    }
+  z-index: 999;
+}
 
-    .bottom-content {
-        width: 320px;
-        height: 72px;
-        left: 1257px;
-        top: 1055px;
+.rent-cond-rectangle {
+  display: flex;
+  background-color: white;
+  padding: 49px;
+  padding-right: 200px;
+  padding-left: 140px;
+  margin-bottom: -60px;
+}
 
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        z-index: 3;
+.rectangle-first-page {
+  width: 928px;
+  height: 110px;
+  left: 842px;
+  top: 993px;
 
-        letter-spacing: 0.01em;
+  background: #ffffff;
+  margin-left: 842px;
+}
 
-        color: #383838;
-    }
+.bottom-title {
+  width: 209px;
+  height: 60px;
+  margin-right: 70px;
 
-    .bottom {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 73px;
-    }
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  white-space: nowrap;
 
-    /* .icon-container a:hover {
-        background-color: gold;
-    } */
+  color: #383838;
+}
+
+.bottom-content {
+  width: 320px;
+  height: 72px;
+  left: 1257px;
+  top: 1055px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.01em;
+
+  color: #383838;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+ul {
+list-style: none;
+}
