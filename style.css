@@ -287,29 +287,18 @@ section {
 }
 
 .go-to .arrow {
-  display: block;
+  /* display: block; */
   margin: 30px auto;
-  width: 10px;
+  transform: rotate(135deg) translate(-10px, 21px);
+  /* width: 10px;
   height: 10px;
   border-top: 2px solid #000;
   border-left: 2px solid #000;
-  transform: rotate(135deg) translate(-10px, 21px);
+  
 
-  z-index: 999;
+  z-index: 999; */
 }
 
-.go-to .arrow:after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 85px;
-  background-color: black;
-  transform: rotate(-45deg) translate(30px, 12px);
-  left: 0;
-  top: 0;
-
-  z-index: 999;
-}
 
 .rent-cond-rectangle {
   display: flex;
@@ -378,7 +367,7 @@ section {
   margin-left: 150px;
 } */
 
-p {
+.first-line {
   width: 95px;
   height: 20px;
   margin-left: 42px;
@@ -392,7 +381,7 @@ p {
   text-transform: uppercase;
 
   color: #383838;
-
+/* сделать через ргба и добавить след свойство  */
   opacity: 0.5;
 }
 
@@ -460,13 +449,9 @@ li:hover {
   margin-bottom: 90px;
 }
 
-.office-description {
+.description p {
   display: flex;
   background-color: white;
-  padding: 49px;
-  padding-right: 45px;
-  padding-left: 90px;
-  margin-bottom: -60px;
 
   font-family: 'Open Sans';
   font-style: normal;
@@ -479,15 +464,20 @@ li:hover {
   color: #383838;
 }
 
-.office-description-rectangle {
+.description {
   display: flex;
   background-color: white;
   margin-left: 1074px;
   margin-top: -184px;
   margin-right: -106px;
+  flex-direction: column;
+  position: relative;
+  padding: 49px;
+  padding-right: 45px;
+  padding-left: 90px;
 }
 
-.left-arrow {
+/* .arrow.left {
   display: block;
   margin: 30px auto;
   width: 10px;
@@ -497,17 +487,49 @@ li:hover {
   transform: rotate(135deg) translate(-10px, 21px);
 
   z-index: 999;
+} */
+
+
+.switch-arrows {
+  /* position: absolute; */
+  display: flex;
+
 }
 
-.left-arrow::after {
+.arrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: rotate(135deg) translate(0px, 0px);
+
+  z-index: 999;
+}
+
+.arrow:before {
   content: "";
   display: block;
-  width: 20px;
-  height: 0px;
+  width: 2px;
+  height: 85px;
   background-color: black;
-  transform: rotate(45deg) translate(30px, 12px);
+  transform: rotate(-45deg) translate(30px, 12px);
   left: 0;
   top: 0;
 
   z-index: 999;
+}
+
+.description .arrow.left {
+transform: rotate(315deg);
+margin-right: 186px;
+
+}
+
+.description .arrow.right {
+
+}
+
+.description .arrow {
+
 }
