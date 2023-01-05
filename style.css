@@ -48,7 +48,7 @@ section {
 .header {
   display: flex;
   width: 70%;
-  margin-top: 83px;
+  padding-top: 83px;
 }
 
 .body {
@@ -171,9 +171,6 @@ section {
   left: 980px;
   top: 0px;
   background: url(imgCover.jpg);
-  /* margin-top: 40px; */
-  /* z-index: -1; */
-  /* background: #f2f2f2; */
 }
 
 .forbes-interview {
@@ -185,7 +182,6 @@ section {
 
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  /* margin-left: 800px; */
   padding-right: 144px;
   background: #f2f2f2;
 }
@@ -205,11 +201,6 @@ section {
 
 .forbes-interview-text {
   transform: rotate(180deg);
-  /* margin: 40px auto;
-    width: 240px;
-    height: 24px;
-    left: 1752px;
-    top: 335px; */
   writing-mode: vertical-lr;
   margin-bottom: 40px;
 }
@@ -241,7 +232,6 @@ section {
   color: #383838;
 }
 
-/* ������ �� ����� �����?  */
 .content {
   font-family: 'Open Sans';
   font-style: normal;
@@ -268,8 +258,7 @@ section {
 .go-to .arrow-with-circle {
   position: relative;
   width: 100px;
-  left: 580px;
-  left: 274px;
+  left: 240px;
   top: -23px;
   /* как задать, между текстом и стрелкой ровно 30px? Я могу сдвинуть, но погрешность же есть
         плюс, я сейчас выровняла текст и стрелку на глаз, а как это сделать по-человечески? 
@@ -290,15 +279,8 @@ section {
 }
 
 .go-to .arrow {
-  /* display: block; */
   margin: 30px auto;
   transform: rotate(135deg) translate(-10px, 21px);
-  /* width: 10px;
-  height: 10px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
-  
-  z-index: 999; */
 }
 
 
@@ -342,7 +324,7 @@ section {
   left: 1257px;
   top: 1055px;
 
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -360,19 +342,12 @@ section {
 
 .offices { 
   margin: 200px auto auto auto;
-    width: 1600px;
+  width: 1600px;
 }
 
-/* .list-title {
-  display: flex;
-  flex-direction: column;
-  margin-left: 150px;
-} */
-
 .first-line {
-  width: 95px;
+  width: 110px;
   height: 20px;
-  margin-left: 42px;
 
   font-family: 'Open Sans';
   font-style: normal;
@@ -382,14 +357,12 @@ section {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #383838;
-  rgba(56, 56, 56, 0.5);
+  color: rgba(56, 56, 56, 0.5);
 }
 
-h2 {
+.headline {
   width: 479px;
   height: 60px;
-  margin-left: 40px;
 
   font-family: 'Playfair Display';
   font-style: normal;
@@ -403,8 +376,6 @@ h2 {
 ul {
   width: 257px;
   height: 432px;
-  /* left: 150px; 
-  top: 1493px; */
   
   font-family: 'Open Sans';
   font-style: normal;
@@ -458,10 +429,10 @@ ul {
   display: flex;
   background-color: white;
 
-padding: 49px;
-padding-right: 45px;
-padding-left: 13px;
-padding-bottom: -60px;
+  padding: 49px;
+  padding-right: 45px;
+  padding-left: 13px;
+  padding-bottom: -60px;
 
   font-family: 'Open Sans';
   font-style: normal;
@@ -487,28 +458,14 @@ padding-bottom: -60px;
   padding-left: 90px;
 }
 
-/* .arrow.left {
-  display: block;
-  margin: 30px auto;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
-  transform: rotate(135deg) translate(-10px, 21px);
-  z-index: 999;
-} */
-
-
 .switch-arrows {
-  /* position: absolute; */
   display: flex;
-
 }
 
 .arrow {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border-top: 2px solid #000;
   border-left: 2px solid #000;
   transform: rotate(135deg) translate(0px, 0px);
@@ -521,8 +478,8 @@ padding-bottom: -60px;
   display: block;
   width: 2px;
   height: 85px;
-  background-color: black;
-  transform: rotate(-45deg) translate(30px, 12px);
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotate(-45deg) translate(29px, 11px);
   left: 0;
   top: 0;
 
@@ -530,8 +487,8 @@ padding-bottom: -60px;
 }
 
 .description .arrow.left {
-transform: rotate(315deg);
-margin-right: 186px;
+  transform: rotate(315deg);
+  margin-right: 186px;
 
 }
 
@@ -541,4 +498,81 @@ margin-right: 186px;
 
 .description .arrow {
 
+}
+
+.about-us {
+  margin: 200px auto auto auto;
+  width: 1600px;
+
+  display: flex;
+}
+
+.left-side {
+  flex-basis: 201px;
+  margin-right: 150px;
+  margin-left: 590px;
+  margin-top: 34px;
+}
+
+.upper-number, .lower-number {
+  width: 93px;
+  height: 95px;
+  margin-bottom: 30px;
+  
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 95px;
+
+  color: #383838;
+}
+
+.details {
+  width: 232px;
+  height: 84px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  letter-spacing: 0.01em;
+
+  color: #383838;
+}
+
+.right-side .details {
+  padding-top: 60px;
+  width: 493px;
+  height: 289px;
+
+  
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  
+  letter-spacing: 0.01em;
+
+  color: #383838;
+}
+
+.right-side .go-to {
+  margin-left: 40px;
+}
+
+.gray-circle {
+  height: 700px;
+  width: 700px;
+  top: 2500px;
+  margin-left: 610px;
+  background-color: rgba(242, 242, 242, 1);
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
 }
