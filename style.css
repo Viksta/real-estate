@@ -510,7 +510,7 @@ ul {
 .left-side {
   flex-basis: 201px;
   margin-right: 150px;
-  margin-left: 590px;
+  margin-left: 450px;
   margin-top: 34px;
 }
 
@@ -568,11 +568,29 @@ ul {
   height: 700px;
   width: 700px;
   top: 2500px;
-  margin-left: 610px;
+  margin-left: 475px;
   background-color: rgba(242, 242, 242, 1);
   
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   z-index: -1;
+}
+
+.showreel {
+  margin: 200px auto auto auto;
+  width: 1600px;
+}
+
+.showreel .first-line {
+  width: 249px;
+  height: 20px;
+}
+
+.showreel .headline {
+  margin: 20px 0 60px 30px;
+}
+
+.showreel .first-line, .offices .first-line, .offices .headline {
+  margin-left: 30px;
 }
