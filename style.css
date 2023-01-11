@@ -594,3 +594,36 @@ ul {
 .showreel .first-line, .offices .first-line, .offices .headline {
   margin-left: 30px;
 }
+
+.play-circle {
+  width: 130px;
+  height: 130px;
+  left: 637px;
+  top: 595px;
+  border: 2px solid #E9B0B0;
+  border-radius: 50%;
+}
+
+.play-triangle {
+  width: 38.4px;
+  height: 51.2px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  /* transform: rotate(135deg); */
+}
+
+.play-triangle:after {
+  content: '';
+  /* border: 2px solid #E9B0B0; */
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  transform: rotate(45deg) translate(-80%,0);
+}
+
+.play-bottom {
+  position: absolute;
+  margin-top: 416px;
+  margin-left: 896px;
+}
