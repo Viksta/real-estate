@@ -1,19 +1,16 @@
 body {
   margin: 0;
 }
-section {
-  margin-bottom: 200px;
-}
 
 .main-screen {
-  margin: auto;
-  width: 1600px;
   background: #f2f2f2;
 }
 
 .container {
   margin: auto;
-  width: 1600px;
+  max-width: 1600px;
+  padding-top: 83px;
+  padding-right: 150px;
 }
 
 .logo {
@@ -47,7 +44,7 @@ section {
 
 .header {
   display: flex;
-  width: 70%;
+  max-width: 70%;
   padding-top: 83px;
 }
 
@@ -182,7 +179,7 @@ section {
 
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  padding-right: 144px;
+  /* padding-right: 144px; */
   background: #f2f2f2;
 }
 
@@ -202,7 +199,6 @@ section {
 .forbes-interview-text {
   transform: rotate(180deg);
   writing-mode: vertical-lr;
-  margin-bottom: 40px;
 }
 
 .short-vert-line {
@@ -321,8 +317,6 @@ section {
 .bottom-content {
   width: 320px;
   height: 72px;
-  left: 1257px;
-  top: 1055px;
 
   font-family: 'Open Sans';
   font-style: normal;
@@ -346,9 +340,6 @@ section {
 }
 
 .first-line {
-  width: 110px;
-  height: 20px;
-
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -374,7 +365,6 @@ section {
 }
 
 ul {
-  width: 257px;
   height: 432px;
   
   font-family: 'Open Sans';
@@ -492,17 +482,31 @@ ul {
 
 }
 
-.description .arrow.right {
+.switch-arrows .arrow {
+  border-color: rgba(233, 176, 176, 1);
+  }
+  
+  .switch-arrows .arrow::before { 
+  background-color: rgba(233, 176, 176, 1);
+  }
+  
+  .switch-arrows .arrow.left::before {
+  height: 20px;
+  transform: rotate(-45deg) translate(6.5px, 2px);
+  }
+  
+  .switch-arrows .arrow:not(.active) {
+  border-color: #000;
+  }
 
-}
+  .switch-arrows .arrow:not(.active)::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  }
 
-.description .arrow {
-
-}
 
 .about-us {
   margin: 200px auto auto auto;
-  width: 1600px;
+  max-width: 1600px;
 
   display: flex;
 }
@@ -515,8 +519,6 @@ ul {
 }
 
 .upper-number, .lower-number {
-  width: 93px;
-  height: 95px;
   margin-bottom: 30px;
   
   font-family: 'Playfair Display';
@@ -529,9 +531,6 @@ ul {
 }
 
 .details {
-  width: 232px;
-  height: 84px;
-
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -547,17 +546,6 @@ ul {
   padding-top: 60px;
   width: 493px;
   height: 289px;
-
-  
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  
-  letter-spacing: 0.01em;
-
-  color: #383838;
 }
 
 .right-side .go-to {
@@ -577,22 +565,19 @@ ul {
   z-index: -1;
 }
 
-.showreel {
-  margin: 200px auto auto auto;
-  width: 1600px;
+section {
+  margin: auto;
+  margin-bottom: 200px;
+  padding: 0 60px;
+  max-width: 1600px;
 }
 
-.showreel .first-line {
-  width: 249px;
-  height: 20px;
+img {
+  max-width: 100%;
 }
 
-.showreel .headline {
-  margin: 20px 0 60px 30px;
-}
-
-.showreel .first-line, .offices .first-line, .offices .headline {
-  margin-left: 30px;
+.play-button {
+  max-width: 120px;
 }
 
 .footer-logo {
@@ -622,3 +607,32 @@ ul {
 
   color: #383838;
 }
+
+footer {
+max-width: 1624px;
+}
+/* извини за это, но у меня по-другому не получается */
+
+.phone-comment {
+  float: right;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  
+  letter-spacing: 0.01em;
+  
+  color: rgba(56, 56, 56, 0.5);
+}
+/* 
+img:not(.play-button) {¶
+  width: 100%;¶
+  } */ */
+
+
+
+/* 
+1. При уменьшении экрана - логотип  шапке тоже уменьшается
+2.  При добавлении отступов у секций, у первого соответсвенно тоже добавляется. Через :not?*/
