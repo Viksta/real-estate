@@ -375,6 +375,7 @@ ul {
   list-style: none;
 
   margin-top: 65px;
+  margin-left: -45px;
   letter-spacing: 0.01em;
   
   color: #383838;
@@ -395,7 +396,7 @@ ul {
   align-items: center;
   justify-content: flex-end;
   margin-top: -420px;
-  margin-right: -200px;
+  margin-right: -150px;
 }
 
 .office-pic-left {
@@ -450,6 +451,7 @@ ul {
 
 .switch-arrows {
   display: flex;
+  margin-left: 15px;
 }
 
 .arrow {
@@ -567,7 +569,6 @@ ul {
 
 section {
   margin: auto;
-  margin-bottom: 200px;
   padding: 0 60px;
   max-width: 1600px;
 }
@@ -581,7 +582,8 @@ img {
 }
 
 .footer-logo {
-  margin-right: 300px;
+  margin-right: 355px;
+  margin-left: 110px;
 }
 
 .navigation .nav-link {
@@ -593,12 +595,16 @@ img {
 }
 
 .phone-number {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 22px;
+    
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 24px;
-  margin-left: 195px;
+  margin-left: 280px;
   margin-top: -5px;
 
   letter-spacing: 0.01em;
@@ -614,18 +620,58 @@ max-width: 1624px;
 /* извини за это, но у меня по-другому не получается */
 
 .phone-comment {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -133px;
 
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-decoration: none;
   
   letter-spacing: 0.01em;
   
   color: rgba(56, 56, 56, 0.5);
+  
 }
+
+.icon-container-footer {
+  flex-direction: row;
+
+  margin-left: 80px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.footer-icons {
+  padding-right: 22px;
+
+  text-decoration: none;
+}
+
+.policy {
+  display: flex;
+
+}
+
+.phone-comment.policy {
+padding-right: 190px;
+padding-top: 45px;
+padding-bottom: 45px;
+
+padding-left: 70px;
+
+/* ты говорил так не делать, но я сделала))) */
+}
+
+.policy {
+  background-color: rgba(242, 242, 242, 1);
+  max-width: 1600px;
+}
+
+
 /* 
 img:not(.play-button) {¶
   width: 100%;¶
@@ -635,4 +681,9 @@ img:not(.play-button) {¶
 
 /* 
 1. При уменьшении экрана - логотип  шапке тоже уменьшается
-2.  При добавлении отступов у секций, у первого соответсвенно тоже добавляется. Через :not?*/
+2.  При добавлении отступов у секций, у первого соответсвенно тоже добавляется. Через :not?
+3. Мы добавляли   margin-bottom: 200px; к section, но работает он не совсем так как предполагалось: он не делает разрывы между секциями, а как обычный марджин добавляется к последнему большому блоку (тому что с видео). Итого отступы между секциями у нас ушли. 
+4. "Популярные офисы" не выровнять чуть левее через марджин :(((
+5. Блок с честными условиями аренды съехал и обратно не встает. 
+6. Кончик серой полосы вообще не серый в паддинге. 
+*/
